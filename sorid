@@ -1,0 +1,10 @@
+<?php
+$string="This\t is an example \nstring.";
+$tok=strtok($string,"\n\t");
+while($tok!==false){
+	echo "Word=$tok<br/>";
+	$tok=strtok(" \n\t");
+}
+?>
+
+//we can break every word using strtok() function
